@@ -1,7 +1,5 @@
 #!/bin/bash
-
 echo "Hello from before run script"
-
+echo HELLO
 # Call the original script
 exec /usr/libexec/s2i/run
-
