@@ -1,8 +1,13 @@
-#!/bin/sh
+#!/bin/bash
+echo "Before assembling"
 
-echo Hello from before assemble script
-
-# Call the original script
 /usr/libexec/s2i/assemble
+rc=$?
 
-echo Hello from after assemble script
+if [ $rc -eq 0 ]; then
+    echo "After successful assembling"
+else
+    echo "After failed assembling"
+fi
+
+exit $rc
