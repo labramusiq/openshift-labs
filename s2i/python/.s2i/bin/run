@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Hello from before run script" > file.txt
+echo HELLO > file2.txt
 echo "Hello from before run script"
 echo HELLO
 # Call the original script
