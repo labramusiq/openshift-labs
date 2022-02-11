@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh
 # The assemble script builds the application artifacts from a source and 
 # places them into appropriate directories inside the image.
 
